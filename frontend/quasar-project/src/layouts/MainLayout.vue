@@ -75,7 +75,7 @@ const linksList = [
     title: 'UnosPage',
     caption: 'ishod2',
     icon: 'public',
-    link: 'https://unospage.quasar.dev',
+    link: 'https://UnosPage.quasar.dev',
   }
 ]
 

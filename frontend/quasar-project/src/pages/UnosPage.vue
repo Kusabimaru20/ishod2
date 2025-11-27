@@ -1,32 +1,15 @@
 <template>
-  <q-page padding>
-    <template>
   <div class="q-pa-md">
-    <q-btn-dropdown color="primary" label="Dropdown Button">
-      <q-list>
-        <q-item clickable v-close-popup @click="onItemClick">
-          <q-item-section>
-            <q-item-label>Photos</q-item-label>
-          </q-item-section>
-        </q-item>
+    <q-badge color="secondary">
+      Model: {{ standard }} (0 to 50)
+    </q-badge>
 
-        <q-item clickable v-close-popup @click="onItemClick">
-          <q-item-section>
-            <q-item-label>Videos</q-item-label>
-          </q-item-section>
-        </q-item>
-
-        <q-item clickable v-close-popup @click="onItemClick">
-          <q-item-section>
-            <q-item-label>Articles</q-item-label>
-          </q-item-section>
-        </q-item>
-      </q-list>
-    </q-btn-dropdown>
+    <q-slider v-model="standard" :min="0" :max="50"/>
+    <q-slider v-model="standard" :min="0" :max="50" color="green"/>
   </div>
 </template>
-  </q-page>
-</template>
+
+
 
 <script setup>
 //

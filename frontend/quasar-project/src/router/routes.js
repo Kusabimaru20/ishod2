@@ -3,7 +3,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
   
-    children: [{ path: 'UnosPage', component: () => import('pages/UnosPage.vue') }]
+    children: [{ path:'UnosPage', component: () => import('pages/UnosPage.vue') }]
   },
 
   // Always leave this as last one,
